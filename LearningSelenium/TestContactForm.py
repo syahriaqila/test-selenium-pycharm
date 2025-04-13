@@ -20,8 +20,6 @@ try:
     time.sleep(3)
     driver.find_element(By.XPATH, "//button[text()='Send Message']").click()
 
-
-
     # Wait and check for success message
     time.sleep(2)
     success_msg = driver.find_element(By.ID, "swal2-title").text
